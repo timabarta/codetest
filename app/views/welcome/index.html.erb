@@ -1,0 +1,17 @@
+<% if current_user %>
+	<div class="jumbotron">
+		<div class="container-fluid">
+		    <h1>Add a product!</h1>
+		    <p>Adding, editing, and deleting products can be tough. Make it easy on yourself with ProductGen!</p>
+		    <p><%= link_to "Get started today", products_path, class: "btn btn-success btn-lg" %></p>
+		</div>
+	</div>
+<% else %>
+	<div class="jumbotron">
+		<div class="container-fluid">
+		    <h1>Sign up to add a product!</h1>
+		    <p>Sign up to get started with ProductGen!</p>
+		    <p><%= link_to "Sign up", signup_path, class: "btn btn-success btn-lg" %></p>
+		</div>
+	</div>
+<% end %>
